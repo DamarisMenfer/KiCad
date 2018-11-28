@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:test-cache
+LIBS:ShieldProject-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -52,7 +52,7 @@ Text Label 10550 2000 0    60   ~ 0
 9(**)
 Text Label 10550 1900 0    60   ~ 0
 10(**/SS)
-Text Label 7300 2650 2    60   ~ 0
+Text Label 6700 2550 2    60   ~ 0
 11(**/MOSI)
 Text Label 10550 1700 0    60   ~ 0
 12(MISO)
@@ -286,8 +286,6 @@ Wire Wire Line
 	9300 2100 9300 2200
 Wire Wire Line
 	9300 2200 9300 3150
-Wire Notes Line
-	8500 3450 11200 3450
 Wire Wire Line
 	9400 1800 8650 1800
 Text Notes 9700 1600 0    60   ~ 0
@@ -616,17 +614,6 @@ F 3 "~" H 7400 900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D2
-U 1 1 5BEA17F3
-P 8100 900
-F 0 "D2" V 8138 783 50  0000 R CNN
-F 1 "LED" V 8047 783 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm_FlatTop" H 8100 900 50  0001 C CNN
-F 3 "~" H 8100 900 50  0001 C CNN
-	1    8100 900 
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R R7
 U 1 1 5BEA1AF9
 P 7400 1350
@@ -636,17 +623,6 @@ F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7330 1350 
 F 3 "~" H 7400 1350 50  0001 C CNN
 	1    7400 1350
 	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW1
-U 1 1 5BEA479C
-P 5800 2650
-F 0 "SW1" V 5754 2798 50  0000 L CNN
-F 1 "SW_Push" V 5845 2798 50  0000 L CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5800 2850 50  0001 C CNN
-F 3 "" H 5800 2850 50  0001 C CNN
-	1    5800 2650
-	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0109
@@ -674,90 +650,14 @@ F 3 "" H 7400 1650 50  0001 C CNN
 	1    7400 1650
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0111
-U 1 1 5BEB5DC6
-P 8100 1650
-F 0 "#PWR0111" H 8100 1400 50  0001 C CNN
-F 1 "GND" H 8105 1477 50  0000 C CNN
-F 2 "" H 8100 1650 50  0001 C CNN
-F 3 "" H 8100 1650 50  0001 C CNN
-	1    8100 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7400 1650 7400 1500
-$Comp
-L Device:R R8
-U 1 1 5BEBE652
-P 8100 1350
-F 0 "R8" H 8170 1396 50  0000 L CNN
-F 1 "10k" H 8170 1305 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8030 1350 50  0001 C CNN
-F 3 "~" H 8100 1350 50  0001 C CNN
-	1    8100 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8100 1050 8100 1200
-Wire Wire Line
-	8100 1500 8100 1650
-$Comp
-L Device:R R9
-U 1 1 5BEC6DB9
-P 5800 3150
-F 0 "R9" H 5870 3196 50  0000 L CNN
-F 1 "660" H 5870 3105 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5730 3150 50  0001 C CNN
-F 3 "~" H 5800 3150 50  0001 C CNN
-	1    5800 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5C #PWR0112
-U 1 1 5BEC86C5
-P 5800 2200
-F 0 "#PWR0112" H 5800 2050 50  0001 C CNN
-F 1 "+5C" H 5815 2373 50  0000 C CNN
-F 2 "" H 5800 2200 50  0001 C CNN
-F 3 "" H 5800 2200 50  0001 C CNN
-	1    5800 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0113
-U 1 1 5BEC872B
-P 5800 3450
-F 0 "#PWR0113" H 5800 3200 50  0001 C CNN
-F 1 "GND" H 5805 3277 50  0000 C CNN
-F 2 "" H 5800 3450 50  0001 C CNN
-F 3 "" H 5800 3450 50  0001 C CNN
-	1    5800 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 2450 5800 2200
-Wire Wire Line
-	5800 2850 5800 2900
-Wire Wire Line
-	5800 3300 5800 3450
-Wire Wire Line
-	5800 2900 6150 2900
-Connection ~ 5800 2900
-Wire Wire Line
-	5800 2900 5800 3000
 Wire Wire Line
 	5500 1100 5400 1100
 Wire Wire Line
 	5400 1100 5400 1000
 Wire Notes Line
 	5050 1950 8500 1950
-Wire Notes Line
-	6450 500  6450 3700
-Wire Notes Line
-	5050 2200 5650 2200
-Wire Notes Line
-	5650 2200 5650 1950
 Wire Notes Line
 	5050 750  5850 750 
 Wire Notes Line
@@ -770,84 +670,82 @@ Text Notes 6650 650  0    79   ~ 0
 LEDs
 Text Notes 5200 650  0    79   ~ 0
 Buzzer
-Text Notes 5150 2100 0    79   ~ 0
-Button
 Wire Wire Line
 	5400 1300 5400 1550
 $Comp
 L RN2483:RN2483_Breakout U1
 U 1 1 5BEF5229
-P 7950 2900
-F 0 "U1" V 8450 2700 50  0000 L CNN
-F 1 "RN2483_Breakout" V 8550 2700 50  0000 L CNN
-F 2 "MesEmpreintes:Module_LoRa_RN2483" H 8150 3000 50  0001 C CNN
-F 3 "" H 8150 3000 50  0001 C CNN
-	1    7950 2900
+P 7350 2800
+F 0 "U1" V 7850 2600 50  0000 L CNN
+F 1 "RN2483_Breakout" V 7950 2600 50  0000 L CNN
+F 2 "MesEmpreintes:Module_LoRa_RN2483" H 7550 2900 50  0001 C CNN
+F 3 "" H 7550 2900 50  0001 C CNN
+	1    7350 2800
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0114
 U 1 1 5BEF5299
-P 7500 3450
-F 0 "#PWR0114" H 7500 3200 50  0001 C CNN
-F 1 "GND" H 7505 3277 50  0000 C CNN
-F 2 "" H 7500 3450 50  0001 C CNN
-F 3 "" H 7500 3450 50  0001 C CNN
-	1    7500 3450
+P 6900 3350
+F 0 "#PWR0114" H 6900 3100 50  0001 C CNN
+F 1 "GND" H 6905 3177 50  0000 C CNN
+F 2 "" H 6900 3350 50  0001 C CNN
+F 3 "" H 6900 3350 50  0001 C CNN
+	1    6900 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7500 3250 7500 3450
+	6900 3150 6900 3350
 $Comp
 L power:+3.3V #PWR0115
 U 1 1 5BEFD0E1
-P 7500 2400
-F 0 "#PWR0115" H 7500 2250 50  0001 C CNN
-F 1 "+3.3V" H 7515 2573 50  0000 C CNN
-F 2 "" H 7500 2400 50  0001 C CNN
-F 3 "" H 7500 2400 50  0001 C CNN
-	1    7500 2400
+P 6900 2300
+F 0 "#PWR0115" H 6900 2150 50  0001 C CNN
+F 1 "+3.3V" H 6915 2473 50  0000 C CNN
+F 2 "" H 6900 2300 50  0001 C CNN
+F 3 "" H 6900 2300 50  0001 C CNN
+	1    6900 2300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7500 2400 7500 3050
+	6900 2300 6900 2950
 Wire Wire Line
-	7500 3150 7650 3150
+	6900 3050 7050 3050
 Wire Wire Line
-	7650 3050 7500 3050
-Connection ~ 7500 3050
+	7050 2950 6900 2950
+Connection ~ 6900 2950
 Wire Wire Line
-	7500 3050 7500 3150
+	6900 2950 6900 3050
 Wire Wire Line
-	7650 2950 7300 2950
+	7050 2850 6700 2850
 Wire Wire Line
-	7650 2650 7300 2650
+	7050 2550 6700 2550
 Wire Wire Line
-	7650 2550 7300 2550
+	7050 2450 6700 2450
 Wire Notes Line
 	8500 500  8500 3700
-Wire Notes Line
-	500  3700 8500 3700
-Text Notes 6500 2100 0    79   ~ 0
+Text Notes 5100 2100 0    79   ~ 0
 Lora - RN2483
 Wire Notes Line
-	7500 1950 7500 2150
+	6100 1950 6100 2150
 Wire Notes Line
-	7500 2150 6450 2150
+	6100 2150 5050 2150
 Text Label 10550 1800 0    60   ~ 0
 11(**/MOSI)
-Text Label 7300 2550 2    60   ~ 0
+Text Label 6700 2450 2    60   ~ 0
 10(**/SS)
-Text Label 7300 2950 2    60   ~ 0
+Text Label 6700 2850 2    60   ~ 0
 12(MISO)
 Wire Wire Line
-	7500 3250 7650 3250
-Text Label 6150 2900 0    60   ~ 0
-7
-Text Label 7400 750  0    60   ~ 0
-8
-Text Label 8100 750  0    60   ~ 0
-9(**)
+	6900 3150 7050 3150
 Text Label 5400 1000 0    60   ~ 0
 6(**)
+Text Label 7400 700  0    60   ~ 0
+13(SCK)
+Wire Wire Line
+	7400 700  7400 750 
+Wire Notes Line
+	6450 500  6450 1950
+Wire Notes Line
+	500  3700 11200 3700
 $EndSCHEMATC
